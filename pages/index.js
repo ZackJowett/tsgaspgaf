@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import Menu from "@/components/nav/menu";
 
@@ -8,7 +9,7 @@ export default function Home() {
 	return (
 		<main className="flex flex-col p-4 h-full">
 			<div className="titleWrapper min-w-md whitespace-nowrap">
-				<a href="/" className="">
+				<Link href="/" className="">
 					<h1 className="text-right">
 						TALL SAD GIRL AND
 						<br />
@@ -19,7 +20,7 @@ export default function Home() {
 					<h3 className="text-md text-right">
 						based on a very small novel
 					</h3>
-				</a>
+				</Link>
 			</div>
 
 			{/* <Image
