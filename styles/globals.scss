@@ -4,18 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway&display=swap");
+
+/* VARIABLES */
 :root {
 	--primary: #08c4fd;
 	--text: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
-}
+/* HTML ELEMENTS */
 html {
 	height: -webkit-fill-available;
 }
@@ -25,7 +23,7 @@ body {
 	background-color: var(--primary);
 	height: 100vh;
 	height: -webkit-fill-available;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 #__next {
@@ -42,6 +40,24 @@ h6,
 p,
 a {
 	color: var(--text);
+}
+
+h1,
+h2 {
+	font-family: LATO;
+	font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: LATO;
+	font-weight: 400;
+}
+
+a {
+	font-family: Raleway;
 }
 
 /* TYPOGRAPHY */
