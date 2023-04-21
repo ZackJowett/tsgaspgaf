@@ -1,0 +1,88 @@
+@import "./reset.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary: #08c4fd;
+	--text: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+html {
+	height: -webkit-fill-available;
+}
+
+body {
+	color: var(--text);
+	background-color: var(--primary);
+	height: 100vh;
+	height: -webkit-fill-available;
+	overflow: hidden;
+}
+
+#__next {
+	height: 100%;
+}
+
+/* HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	color: var(--text);
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.875rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
+/* LINKS */
+a {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.main-nav {
+	padding-top: 25%;
+
+	a {
+		padding: 0.5rem;
+		width: 50%;
+	}
+}
